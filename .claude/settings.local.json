@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cd /Users/johnwayne/Documents/GoIT_AI_ML/playground/local_radreporting_project && npx tsc --noEmit 2>&1 | head -40)",
+      "Bash(cd /Users/johnwayne/Documents/GoIT_AI_ML/playground/local_radreporting_project && npx tsc --noEmit 2>&1 | tail -30)",
+      "Bash(/Users/johnwayne/Documents/GoIT_AI_ML/playground/local_radreporting_project/node_modules/.bin/tsc --noEmit --project /Users/johnwayne/Documents/GoIT_AI_ML/playground/local_radreporting_project/tsconfig.json 2>&1 | tail -30)",
+      "Bash(/Users/johnwayne/Documents/GoIT_AI_ML/playground/local_radreporting_project/node_modules/.bin/tsc --noEmit --project /Users/johnwayne/Documents/GoIT_AI_ML/playground/local_radreporting_project/tsconfig.json 2>&1 | tail -20)"
+    ]
+  }
+}
