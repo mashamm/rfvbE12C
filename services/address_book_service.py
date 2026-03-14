@@ -13,7 +13,7 @@ class AddressBookService(BaseService):
     """Сервіс для роботи з адресною книгою"""
 
     def find_contact_by_id(self, id: str) -> Contact | None:
-        return next((contact for contact in self.contacts if contact.id == id), None)
+        return next((contact for contact in self.contacts if str(contact.id) == id), None)
 
     @log_command_action()
     def add_contact(self, data: dict) -> None:

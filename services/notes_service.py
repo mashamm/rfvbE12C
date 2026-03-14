@@ -11,7 +11,7 @@ class NotesService(BaseService):
     """Сервіс для роботи з нотатками"""
 
     def find_note_by_id(self, id: str) -> Note | None:
-        return next((note for note in self.notes if note.id == id), None)
+        return next((note for note in self.notes if str(note.id) == id), None)
 
     @log_command_action()
     def add_note(self, data: dict) -> None:
